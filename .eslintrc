@@ -1,0 +1,9 @@
+{
+  "extends": ["andyet-react"],
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  }
+}

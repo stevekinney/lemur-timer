@@ -1,0 +1,39 @@
+{
+  "name": "lemur-timer",
+  "version": "1.0.0",
+  "description": "A little reminder timer built with the following goals:",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --content-base build/ --colors",
+    "build": "webpack --compress",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevekinney/lemur-timer.git"
+  },
+  "keywords": [],
+  "author": "Steve Kinney <hello@stevekinney.net> (http://stevekinney.net)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevekinney/lemur-timer/issues"
+  },
+  "homepage": "https://github.com/stevekinney/lemur-timer#readme",
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-es2017": "^6.16.0",
+    "eslint": "^3.12.2",
+    "eslint-config-andyet-react": "^1.2.2",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "mocha": "^3.2.0"
+  }
+}
