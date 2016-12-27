@@ -3,12 +3,12 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    application: "./src/index.js",
-    worker: "./src/worker.js"
+    application: ['babel-polyfill', './src/index.js'],
+    worker: ['babel-polyfill', './src/worker.js']
   },
   output: {
     path: path.join(__dirname, 'build'),
-    filename: "[name].js"
+    filename: '[name].js'
   },
   module: {
     loaders: [{
@@ -39,5 +39,5 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.json', '.scss', '.css']
   },
-  devtool: "#eval"
+  devtool: '#eval'
 };
