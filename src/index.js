@@ -19,7 +19,8 @@ if ('serviceWorker' in navigator) {
 
 newTimerForm.addEventListener('submit', (event) => {
   const title = newTimerFormTitle.value;
-  const due = newTimerFormDue.value;
+  const minutesFromNow = parseInt(newTimerFormDue.value, 10);
+  const due = Date.now() + (1000 * 60 * minutesFromNow);
 
   Timer.create({ title, due })
         .then(renderTimerElement)
